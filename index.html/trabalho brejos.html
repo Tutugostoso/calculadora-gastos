@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Brechola </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Brechola 🍻</h1>
+
+        <!-- Formulário para entrada dos dados -->
+        <form id="gastosForm">
+            <label for="nome">Nome da Pessoa:</label>
+            <input type="text" id="nome" placeholder="Nome da pessoa" required>
+
+            <label for="alimentação">Gasto com alimentação (R$):</label>
+            <input type="number" id="alimentação" placeholder="Ex: 500" required>
+
+            <label for="agua">Gasto com Água (R$):</label>
+            <input type="number" id="agua" placeholder="Ex: 100" required>
+
+            <label for="luz">Gasto com Luz (R$):</label>
+            <input type="number" id="luz" placeholder="Ex: 150" required>
+
+            <label for="internet">Gasto com internet </label>
+            <input type="number" id="internet" placeholder="Ex: 79" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <h2>Gastos por pessoa</h2>
+        <table id="tabelaGastos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Alimentação (R$)</th>
+                    <th>Água (R$)</th>
+                    <th>Luz (R$)</th>
+                    <th>internet(R$)</th>
+                    <th>Total (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <div id="totalGastos">
+            <h3>Total de Gastos: R$ <span id="gastosTotais">0,00</span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
